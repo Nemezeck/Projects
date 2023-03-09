@@ -240,6 +240,11 @@ public class View2 extends javax.swing.JFrame {
         fc.showSaveDialog(this);
         
         File f= fc.getSelectedFile();
+        
+        if(f==null){
+            return;
+        }
+        
         String s= f.toString()+".pdf";
         
         
